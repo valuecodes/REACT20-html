@@ -1,14 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: rgb(223, 223, 223);
   font-family: Arial, Helvetica, sans-serif;
-  padding: 0;
-  margin: 0;
+}
+h1 {
+  color: white;
+  margin: 30px;
+}
+
+.container {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.863);
+}
+
+.container p {
+  margin: 20px;
 }
 
 .navbar {
   list-style-type: none;
   background-color: rgb(199, 199, 199);
   text-align: right;
+  margin: 20px 0;
 }
 
 .navbar li a {
@@ -21,14 +39,94 @@ header ul li {
   margin-right: 5px;
 }
 
-h1 {
-  text-align: center;
-}
-
 p {
-  color: rgb(142, 142, 167);
+  color: rgb(0, 0, 0);
 }
 
 .picture {
+  position: absolute;
+  z-index: -1;
   width: 100vw;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1) 30%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+table {
+  background-color: rgb(255, 255, 255);
+  border-collapse: collapse;
+  margin: 60px auto;
+}
+
+thead {
+  background-color: rgb(68, 68, 68);
+  color: white;
+}
+
+tbody {
+  background-color: rgb(255, 255, 255);
+}
+
+th {
+  height: 20px;
+}
+
+tr {
+  border-bottom: 2px solid rgb(0, 0, 0);
+  height: 50px;
+}
+
+#boxes {
+  background-color: rgb(39, 39, 39);
+  background-image: url(https://images.unsplash.com/photo-1538393458636-02b5a75c6feb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1714&q=80);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.boxContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: rgba(139, 139, 139, 0.562);
+}
+
+.box {
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  margin: 5px;
+}
+
+.box1 {
+  border: tomato 10px dotted;
+}
+
+.box2 {
+  border: rgb(255, 145, 1) 10px double;
+  border-radius: 50%;
+}
+
+.box3 {
+  border-top: 10px inset rgb(255, 0, 0);
+  border-right: 10px inset rgb(0, 255, 55);
+  border-bottom: 10px inset rgb(17, 0, 255);
+  border-left: 10px inset rgb(255, 217, 0);
+}
+
+.box4 {
+  border: 10px dashed rgba(10, 86, 252, 0.521);
+  border-radius: 10px;
+}
+
+.box5 {
+  border: 10px ridge rgb(255, 0, 0);
+}
+
+.textPicture {
+  height: 200px;
+  float: left;
+  margin: 20px;
 }
