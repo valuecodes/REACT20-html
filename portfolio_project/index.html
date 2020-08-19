@@ -7,20 +7,119 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div></div>
-    <h1>My Portfolio</h1>
-    <p class="paragraph">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, mollitia
-      inventore vel voluptatum accusamus quod. Optio tempora enim, laborum ad
-      nostrum at. Assumenda illum nesciunt eum nemo, voluptate reprehenderit
-      necessitatibus consectetur ab rerum asperiores, odio tenetur. Ad quibusdam
-      omnis, laudantium nostrum exercitationem esse autem ducimus alias, quam
-      qui id voluptate a? Architecto quae itaque voluptatibus labore nostrum
-      ipsum quidem corrupti, quod porro numquam doloribus ipsa quaerat sapiente
-      officiis recusandae. Molestias dolor quasi eos neque ipsam aut nulla vitae
-      pariatur voluptatibus, voluptatem saepe sit aliquam quia exercitationem?
-      Sed qui accusamus enim iste, eos ab quis nihil odio laborum! Labore, iste
-      numquam!
-    </p>
+    <header>
+      <a
+        class="logo"
+        href="http://127.0.0.1:5500/html/portfolio_project/index.html"
+        >My Portfolio</a
+      >
+      <nav>
+        <ul class="navbar">
+          <li><a href="#past">Past</a></li>
+          <li><a href="#present">Present</a></li>
+          <li><a href="#future">Future</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="heroBanner">
+        <h1>Welcome to the <span class="colorVariant">portfolio</span> page</h1>
+      </div>
+      <div class="container">
+        <div id="past">
+          <div class="card padding">
+            <h2>Past</h2>
+            <img
+              class="pastImage"
+              src="./pictures/past.jpg"
+              alt="Past picture"
+            />
+            <p class="pastText">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
+              repudiandae explicabo velit suscipit necessitatibus atque ipsum,
+              quibusdam dolores porro ratione et sed, earum autem libero quae
+              corrupti? Sequi debitis odit asperiores iste deleniti expedita
+              reprehenderit facilis possimus hic aut sapiente beatae, inventore
+              non velit, vel, natus molestiae adipisci quibusdam reiciendis. Quo
+              esse eum, vero, deserunt pariatur provident et possimus ducimus ab
+              maiores, iste minus dolores dolorum illo quas iusto laudantium
+              voluptas sed. Quasi quos nisi illum autem suscipit labore placeat,
+              quas tempore necessitatibus odio fuga! Expedita illo ipsum
+              exercitationem nam sunt, non delectus id iusto ad totam velit
+              voluptate tempora! illo quas iusto laudantium voluptas sed. Quasi
+              quos nisi illum autem suscipit labore placeat, quas tempore
+              necessitatibus odio fuga! Expedita illo ipsum exercitationem nam
+              sunt, non delectus id iusto ad totam velit voluptate tempora!
+            </p>
+          </div>
+        </div>
+        <div id="present">
+          <div class="card">
+            <img
+              class="presentImage"
+              src="./pictures/present.jpg"
+              alt="Present picture"
+            />
+            <div class="textContainer">
+              <h2>Present</h2>
+              <p class="presentText">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                dolorum omnis possimus ex ea fuga quae quia. Libero quibusdam
+                ipsam, neque nemo rerum, quo ea voluptatem voluptates eaque,
+                optio veniam perferendis maxime nulla. Voluptas porro explicabo
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="future">
+          <div class="card">
+            <img
+              class="futureImage"
+              src="./pictures/future.jpg"
+              alt="Future picture"
+            />
+            <div class="textContainer">
+              <h2>Future</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae quasi delectus, magnam deserunt nobis quidem tenetur
+                autem saepe inventore ratione alias adipisci impedit quo iste
+                asperiores maiores voluptates dolorem facere possimus!
+                Dignissimos beatae ipsa ab quasi molestias totam quas inventore
+                sunt enim magni mollitia impedit, obcaecati natus? Accusantium
+                natus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Juha Kangas 2020 <span class="tradeMark">&#169;</span></p>
+    </footer>
   </body>
 </html>
+
+<!-- 
+
+List of things to add
+
+header
+Logo => clickable 
+Nav
+Ul
+One page parallel
+Smooth scrolling
+
+Main
+Divs 4 pcs:
+
+Hero banner: 1 big text header and picture, one word different colour, height 100vh
+
+Past: background, card, headline, img round, paragraph lines between lines
+
+Present:  picture text
+
+Future same as past 
+
+-->

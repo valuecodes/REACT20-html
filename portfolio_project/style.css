@@ -1,10 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Baloo+Tamma+2&family=Fira+Mono&family=Patrick+Hand+SC&family=Roboto&family=Varela+Round&family=Yrsa&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: rgb(131, 131, 131);
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(226, 226, 226);
+  background-color: rgb(88, 104, 119);
+  font-family: Varela Round;
+}
+
+.container {
+  max-width: 1600px;
+  margin: auto;
+}
+
+p {
+  line-height: 30px;
 }
 
 h1 {
   text-align: center;
-  color: rgb(159, 180, 171);
+  color: rgb(255, 255, 255);
+  background-color: rgba(128, 128, 128, 0.493);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.colorVariant {
+  color: rgb(252, 95, 5);
+}
+
+header {
+  position: relative;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(49, 49, 49, 0.726);
+}
+
+.logo {
+  font-size: 24px;
+  margin-left: 20px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.navbar {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar li {
+  margin: 0 5px;
+  height: 50px;
+}
+
+.navbar li:hover {
+  background-color: dimgray;
+}
+
+.navbar li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 70px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+/* Hero Banner */
+.heroBanner {
+  height: 100vh;
+  margin-top: -60px;
+  background-image: url("./pictures/heroBanner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Past */
+.card {
+  margin: 30px;
+  background-color: rgba(204, 204, 204, 0.397);
+  min-height: 300px;
+  border-radius: 5px;
+  color: rgb(240, 240, 240);
+  box-shadow: 0 0 1px 1px rgba(128, 128, 128, 0.726);
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  color: rgb(59, 59, 59);
+}
+
+.textContainer {
+  padding: 20px;
+}
+
+.textContainer h2 {
+  margin-bottom: 10px;
+  color: rgb(59, 59, 59);
+}
+
+.padding {
+  padding: 20px;
+}
+
+.pastImage {
+  width: 250px;
+  float: left;
+  margin-right: 25px;
+  border-radius: 5px;
+}
+
+#present .card {
+  margin: 0;
+  max-width: 1540px;
+  margin: auto;
+  background-color: rgba(204, 204, 204, 0.719);
+  border-radius: 0;
+}
+
+.presentImage {
+  height: 300px;
+  float: left;
+  margin-right: 20px;
+}
+
+.futureImage {
+  height: 300px;
+  float: right;
+  border-radius: 0 5px 5px 0;
+}
+
+footer {
+  height: 40px;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tradeMark {
+  color: white;
 }
