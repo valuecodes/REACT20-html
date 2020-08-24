@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(58, 121, 84);
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.container {
+  width: 300px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+form {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin: 20px 0;
+}
+
+li input {
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid rgb(206, 206, 206);
+}
+
+label {
+  display: block;
+  font-size: 10px;
+  margin: 5px 0;
+}
+
+.submit {
+  text-align: center;
+  width: 200px;
+  margin-left: 25px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(252, 134, 88);
+  color: white;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: rgb(146, 79, 52);
+}
+
+.terms {
+  font-size: 12px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+p span {
+  color: rgb(252, 134, 88);
+  cursor: pointer;
+}
+
+p span:hover {
+  color: rgb(163, 89, 59);
+}
+
+.login {
+  color: white;
+  margin: 15px;
+  font-size: 15px;
+}

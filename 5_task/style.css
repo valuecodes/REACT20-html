@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+thead {
+  background-color: rgb(219, 219, 219);
+}
+
+thead tr th {
+  font-size: 15px;
+}
+
+th {
+  font-size: 12px;
+  padding: 5px;
+}
+
+tbody {
+  background-color: rgb(247, 247, 247);
+}
+
+tbody th {
+  font-weight: 400;
+  text-align: left;
+}
+
+textarea {
+  height: 200px;
+}
