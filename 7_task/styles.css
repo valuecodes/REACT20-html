@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  padding: 20px 0;
+}
+
+h2 {
+  padding: 20px 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(240, 240, 240);
+}
+
+header {
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.nav ul {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.nav ul li {
+  list-style-type: none;
+  display: inline;
+  margin: 0 20px;
+  padding-bottom: 10px;
+}
+
+.nav ul li a {
+  color: black;
+  text-decoration: none;
+  padding-bottom: 20px;
+}
+
+.nav ul li {
+  list-style-type: none;
+  display: inline;
+  padding-bottom: 10px;
+}
+
+.nav ul li:hover {
+  border-bottom: 5px solid orange;
+}
+
+#heroBanner {
+  height: 600px;
+  background-image: url("https://images.unsplash.com/photo-1595950573995-861a6ee30f80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+  background-size: cover;
+}
+
+.textContainer {
+  position: absolute;
+  background-color: rgba(196, 102, 26, 0.5);
+  width: 400px;
+  padding: 20px;
+  height: auto;
+  margin-top: 150px;
+  color: white;
+  float: left;
+}
+
+.button {
+  border: none;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.dark {
+  background-color: rgb(68, 68, 68);
+  color: white;
+}
+
+#about {
+  margin: 100px 0;
+}
+
+.aboutContainer {
+  margin: auto;
+  margin-top: 50px;
+}
+
+.textBox {
+  width: 50%;
+  float: left;
+  /* padding: 20px; */
+}
+
+.textBox h3 {
+  margin: 20px 0;
+}
+.textBox p {
+  line-height: 30px;
+}
+
+.image {
+  width: 50%;
+  /* margin-left: 20px; */
+}
+
+#contact {
+  /* width: 800px; */
+  height: 600px;
+  background-color: rgb(97, 97, 97);
+  color: white;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.contactUs {
+  width: 50%;
+  float: left;
+  margin-left: auto;
+}
+
+.contactUs ul li {
+  margin: 10px 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.footerText {
+  width: 50%;
+  float: right;
+}
+
+label {
+  display: inline-block;
+  /* width: 100px; */
+}
+
+.labelLong {
+  width: 100px;
+}
+
+.input {
+  width: 200px;
+  height: 20px;
+}
+
+input {
+  width: 50px;
+}
+
+.orange {
+  background-color: rgb(252, 123, 72);
+  color: white;
+}
