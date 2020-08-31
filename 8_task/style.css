@@ -1,0 +1,44 @@
+body {
+  background-color: rgb(134, 184, 201);
+  content: "Hello";
+}
+
+h2::after {
+  content: "Width below 580px";
+}
+
+@media only screen and (min-width: 580px) {
+  body {
+    background-color: rgb(166, 201, 134);
+  }
+  h2::after {
+    content: "Width 580px - 768px";
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: rgb(252, 245, 142);
+  }
+  h2::after {
+    content: "Width 768px - 992px";
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  body {
+    background-color: rgb(253, 175, 112);
+  }
+  h2::after {
+    content: "Width 992px - 1200px";
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    background-color: rgb(245, 72, 72);
+  }
+  h2::after {
+    content: "Width 1200px and over";
+  }
+}

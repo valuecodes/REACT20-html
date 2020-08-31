@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="description" content="Juha Kangas personal portfolio" />
+    <meta name="author" content="Juha Kangas" />
+    <meta name="keywords" content="HTML, CSS, XML, XHTML, Javascript" />
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -95,7 +98,30 @@
       </div>
     </main>
     <footer>
-      <p>Juha Kangas 2020 <span class="tradeMark">&#169;</span></p>
+      <form>
+        <ul>
+          <li><h2>Contact Me</h2></li>
+          <li>
+            <label for="name">Name</label>
+            <input id="name" class="input" type="text" />
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input id="email" class="input" type="email" />
+          </li>
+          <li>
+            <label for="text">Message</label>
+            <textarea name="" id="text" cols="30" rows="5"></textarea>
+          </li>
+          <li>
+            <button class="button" type="submit">Send</button>
+          </li>
+        </ul>
+      </form>
+
+      <p class="trade">
+        Juha Kangas 2020 <span class="tradeMark">&#169;</span>
+      </p>
     </footer>
   </body>
 </html>
