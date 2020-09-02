@@ -35,17 +35,15 @@
         </div>
       </div>
       <div id="about">
-        <div class="container">
-          <div class="aboutContainer">
-            <div class="textBox">
-              <h3>About Us</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-                numquam, soluta ratione fugiat harum et! Optio odit, consequatur
-                fugiat deserunt tenetur dolorem. Expedita aperiam, minima quos
-                voluptatum earum quod, corporis, placeat omnis soluta quidem
-              </p>
-            </div>
+        <div class="container aboutContainer">
+          <div class="textBox">
+            <h3>About Us</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+              numquam, soluta ratione fugiat harum et! Optio odit, consequatur
+              fugiat deserunt tenetur dolorem. Expedita aperiam, minima quos
+              voluptatum earum quod, corporis, placeat omnis soluta quidem
+            </p>
           </div>
 
           <img
@@ -95,10 +93,24 @@
                 <label for="some">Saw in Social Media</label>
               </li>
               <li>
-                <input id="other" name="other" type="checkbox" />
+                <input
+                  onchange="document.getElementById('textArea').hidden=!document.getElementById('textArea').hidden"
+                  id="other"
+                  name="other"
+                  type="checkbox"
+                />
                 <label for="other">Other</label>
               </li>
-              <li><textarea name="" id="" cols="0" rows="2"></textarea></li>
+              <li>
+                <textarea
+                  id="textArea"
+                  hidden
+                  name=""
+                  id=""
+                  cols="0"
+                  rows="2"
+                ></textarea>
+              </li>
               <li><button class="button orange">Send</button></li>
             </ul>
           </div>

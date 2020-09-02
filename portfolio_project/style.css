@@ -12,53 +12,80 @@ html {
 body {
   background-color: rgb(88, 104, 119);
   font-family: Varela Round;
+  max-width: 100vw;
 }
 
 .container {
-  max-width: 1600px;
+  max-width: 1200px;
   margin: auto;
 }
 
 p {
-  line-height: 30px;
-}
-
-h1 {
-  text-align: center;
-  color: rgb(255, 255, 255);
-  background-color: rgba(128, 128, 128, 0.493);
-  border-radius: 5px;
-  padding: 10px;
+  line-height: 2rem;
 }
 
 .colorVariant {
   color: rgb(252, 95, 5);
 }
 
+.section {
+  margin: 5rem auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+label {
+  display: block;
+  width: 12rem;
+}
+
+input {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  height: 2rem;
+}
+
+textarea {
+  width: 100%;
+}
+
+.button {
+  height: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  width: 100px;
+  box-shadow: 0px 0px 5px 3px rgb(71, 71, 71);
+  cursor: pointer;
+}
+
+/* Header */
 header {
-  position: relative;
-  height: 60px;
   display: flex;
+  flex-grow: 1;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(49, 49, 49, 0.726);
+  background-color: rgba(49, 49, 49, 0.849);
 }
 
 .logo {
-  font-size: 24px;
-  margin-left: 20px;
+  font-size: 1.6rem;
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
 
+/* NavBar */
 .navbar {
   display: flex;
-  list-style-type: none;
 }
 
 .navbar li {
-  margin: 0 5px;
-  height: 50px;
+  height: 4rem;
+  display: flex;
+  align-items: center;
 }
 
 .navbar li:hover {
@@ -69,8 +96,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50px;
-  width: 70px;
+  height: 4rem;
+  width: 4rem;
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
@@ -78,81 +105,92 @@ header {
 /* Hero Banner */
 .heroBanner {
   height: 100vh;
-  margin-top: -60px;
-  background-image: url("./pictures/heroBanner.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background: url("./pictures/heroBanner.jpg") center/cover fixed;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.heroBanner h1 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgba(128, 128, 128, 0.493);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
 /* Past */
-.card {
-  margin: 30px;
-  background-color: rgba(204, 204, 204, 0.397);
-  min-height: 300px;
-  border-radius: 5px;
-  color: rgb(240, 240, 240);
-  box-shadow: 0 0 1px 1px rgba(128, 128, 128, 0.726);
+#past {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-.card h2 {
-  margin-bottom: 10px;
-  color: rgb(59, 59, 59);
+.cardSmall {
+  padding: 3px;
+  padding-bottom: 2rem;
+  width: 20rem;
+  background-color: rgb(214, 214, 214);
+  margin: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px solid black;
 }
 
-.textContainer {
-  padding: 20px;
+.cardSmall:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s;
 }
 
-.textContainer h2 {
-  margin-bottom: 10px;
-  color: rgb(59, 59, 59);
-}
-
-.padding {
-  padding: 20px;
+.cardSmall p,
+a {
+  margin: 2rem 0.5rem;
 }
 
 .pastImage {
-  width: 250px;
-  float: left;
-  margin-right: 25px;
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+/* Present */
+#present .card {
+  display: flex;
+}
+
+.textContainer {
+  padding: 2rem;
+}
+
+.textContainer h2 {
+  margin-bottom: 1rem;
+  color: rgb(59, 59, 59);
+}
+
+.card {
+  margin: 0;
+  margin: auto;
+  background-color: rgba(204, 204, 204, 0.719);
   border-radius: 5px;
 }
 
-#present .card {
-  margin: 0;
-  max-width: 1540px;
-  margin: auto;
-  background-color: rgba(204, 204, 204, 0.719);
-  border-radius: 0;
-}
-
 .presentImage {
-  height: 300px;
-  float: left;
-  margin-right: 20px;
+  height: 350px;
+  width: 50%;
+  object-fit: cover;
 }
 
+/* Future */
 .futureImage {
   height: 300px;
+  width: 40%;
+  object-fit: cover;
   float: right;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 0px 5px;
 }
 
-li {
-  list-style-type: none;
-}
-
-label {
-  display: block;
-}
-
+/* Footer */
 footer {
-  /* height: 40px; */
   background-color: gray;
   display: flex;
   flex-direction: column;
@@ -160,11 +198,18 @@ footer {
   align-items: center;
 }
 
+/* Form */
 form {
-  display: block;
-  margin: 20px 0;
+  /* width: 400px; */
+  margin: 1rem 0;
 }
 
+form ul li {
+  display: flex;
+  margin: 1rem 0;
+}
+
+/* Trademark */
 .trade {
   display: block;
 }
@@ -173,14 +218,27 @@ form {
   color: white;
 }
 
-input {
-  border-radius: 5px;
-  border: none;
-  height: 20px;
+@media only screen and (max-width: 800px) {
+  #present .card {
+    flex-direction: column;
+  }
+
+  .presentImage {
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+  }
+  header {
+    flex-direction: column;
+  }
 }
 
-.button {
-  padding: 5px 10px;
-  border-radius: 5px;
-  border: none;
+@media only screen and (max-width: 500px) {
+  .cardSmall {
+    width: 100%;
+    margin-top: 10px;
+  }
+  form ul li {
+    flex-direction: column;
+  }
 }

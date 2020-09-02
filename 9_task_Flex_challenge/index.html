@@ -7,34 +7,31 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
-      <h1>SiteTitle</h1>
+    <header>
+      <div class="siteTitle">Site Title</div>
       <nav>
-        <ul>
-          <li>Nav 1</li>
-          <li>Nav 2</li>
-          <li>Nav 3</li>
-        </ul>
+        <div>Nav 1</div>
+        <div>Nav 2</div>
+        <div>Nav 3</div>
       </nav>
     </header>
     <main>
-      <section>
-        <header class="sectionHeader">Post Title</header>
-        <article>
-          <div class="meta">Post meta</div>
-          <div class="mainContent">
-            <div class="main">Main Content</div>
-            <div class="image">Main Content Image</div>
-          </div>
-        </article>
+      <section class="postContainer">
+        <div class="postTitle">Post Title</div>
+        <section class="contentContainer">
+          <div class="postMeta">Post Meta</div>
+          <article class="mainContainer">
+            <div class="mainContent">Main Content</div>
+            <div class="mainImage">Main Content Image</div>
+          </article>
+        </section>
       </section>
       <aside>
-        <ul>
-          <li class="sideBar">Sidebar</li>
-          <li class="ads">Ads</li>
-          <li class="other">Other Stuff</li>
-        </ul>
+        <div class="sideBar">Side Bar</div>
+        <div class="ads">Ads</div>
+        <div class="other">Other stuff</div>
       </aside>
     </main>
+    <footer>Footer</footer>
   </body>
 </html>

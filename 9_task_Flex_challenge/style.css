@@ -1,106 +1,112 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: 0;
 }
 
-.header {
-  width: 100vw;
+div,
+footer {
+  margin: 5px;
+}
+
+body {
+  height: 100vh;
   display: flex;
-  height: 50px;
+  flex-direction: column;
 }
 
-h1 {
+/* Header */
+header {
+  flex: 1;
+  display: flex;
+}
+
+.siteTitle {
   flex: 1;
   background-color: yellow;
-  margin: 2px;
-  height: 100%;
-}
-
-li {
-  list-style-type: none;
 }
 
 nav {
   flex: 1;
-  height: 50px;
-}
-
-nav ul {
+  background-color: white;
   display: flex;
-  padding: 0;
-  align-items: center;
+  justify-content: space-between;
 }
 
-nav ul li {
-  flex-grow: 1;
-  list-style-type: none;
-  margin: 2px;
-  background-color: rgb(253, 184, 250);
-  height: 50px;
-}
-
-main {
-  display: flex;
-  flex-direction: row;
-  height: 600px;
-}
-
-section {
-  height: 100%;
-  max-height: 600px;
+nav div {
   flex: 1;
-  /* margin: 5px 2px; */
+  background-color: pink;
 }
 
-aside {
-  height: 100%;
-  width: 25%;
+/* Main */
+main {
+  flex: 8;
+  display: flex;
 }
 
-aside ul {
-  height: 100%;
+/* Main Container */
+.postContainer {
+  flex: 3;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
 }
 
-aside ul li {
-  flex-grow: 1;
-  margin: 5px;
+.postTitle {
+  background-color: lightslategrey;
+  flex: 1;
+}
+
+.contentContainer {
+  flex: 5;
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.postMeta {
+  flex: 1;
+  background-color: palegreen;
+  min-width: 200px;
+}
+
+.mainContainer {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+}
+
+.mainContent {
+  flex: 1;
+  background-color: gray;
+}
+
+.mainImage {
+  flex: 2;
+  background-color: yellow;
+}
+
+/* Aside */
+aside {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .sideBar {
+  flex: 1;
   background-color: orange;
 }
 
 .ads {
+  flex: 1;
   background-color: green;
 }
 
 .other {
+  flex: 1;
   background-color: plum;
 }
 
-.sectionHeader {
-  background-color: rgb(141, 141, 158);
-  height: 50px;
-}
-
-article {
-  height: 550px;
-  display: flex;
-  flex-grow: 10;
-}
-
-.meta {
-  flex-grow: 1;
+footer {
   flex: 1;
-  background-color: lime;
-}
-
-.mainContent {
-  flex: 3;
-  display: flex;
-  flex-direction: column;
+  background-color: brown;
 }
