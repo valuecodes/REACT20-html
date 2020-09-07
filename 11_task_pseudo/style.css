@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+body {
+  background-color: rgb(181, 197, 197);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+header {
+  background-color: rgb(112, 112, 112);
+  position: fixed;
+  width: 100vw;
+  top: 50px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  margin: 0 4rem;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin: 0 1rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: tomato;
+}
+
+img {
+  height: 2rem;
+  /* width: 4rem; */
+  color: tomato;
+}
+
+svg {
+  fill: tomato;
+}
+
+footer {
+  background-color: rgb(112, 112, 112);
+  height: 5rem;
+  bottom: 0;
+}
+
+.text-content p {
+  font-size: 16x;
+  margin: 5rem 5rem;
+  padding: 1rem;
+  background-color: rgb(215, 224, 125);
+  border-radius: 1rem;
+}
+
+.text-content p:nth-child(3n) {
+  background-color: rgb(255, 145, 0);
+  color: white;
+}
+
+.text-content p:nth-child(2) {
+  background-color: violet;
+  position: relative;
+  width: 400px;
+  top: 20px;
+  left: 280px;
+}
+
+.text-content p:nth-child(4) {
+  background-color: rgb(14, 53, 226);
+  position: sticky;
+  top: 200px;
+}
+
+.text-content p:last-child {
+  color: slateblue;
+  background-color: snow;
+}
+
+section {
+  position: relative;
+  z-index: -1;
+  /* width: 100vw; */
+}
+
+/* HeroBanner */
+.heroBanner {
+  background-image: url("https://source.unsplash.com/1600x900/?nature,water");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroBanner::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 89, 255, 0.199);
+  top: 0;
+  left: 0;
+}
+
+.heroBannerText {
+  max-width: 600px;
+  background-color: rgba(245, 222, 179, 0.863);
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
