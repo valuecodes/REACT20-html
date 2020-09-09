@@ -8,6 +8,10 @@
     <meta name="keywords" content="HTML, CSS, XML, XHTML, Javascript" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4af73d14ca.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -18,9 +22,9 @@
       </a>
       <nav>
         <ul class="navbar">
-          <li><a href="#past">Past</a></li>
-          <li><a href="#present">Present</a></li>
-          <li><a href="#future">Future</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
         </ul>
       </nav>
     </header>
@@ -28,14 +32,14 @@
       <div class="heroBanner">
         <h1>Welcome to the <span class="colorVariant">portfolio</span> page</h1>
       </div>
-      <section class="container section" id="past">
+      <section class="container section" id="work">
         <div class="cardSmall">
           <img
-            class="pastImage"
+            class="workImage"
             src="https://source.unsplash.com/1600x900/?nature,water"
-            alt="Past picture"
+            alt="Work picture"
           />
-          <p class="pastText">
+          <p class="workText">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
             temporibus nulla cupiditate autem, excepturi corrupti neque? Sit
             odit eaque minus.
@@ -44,11 +48,11 @@
         </div>
         <div class="cardSmall">
           <img
-            class="pastImage"
+            class="workImage"
             src="https://source.unsplash.com/1600x900/?past"
-            alt="Past picture"
+            alt="Work picture"
           />
-          <p class="pastText">
+          <p class="workText">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
             temporibus nulla cupiditate autem, excepturi corrupti neque? Sit
             odit eaque minus.
@@ -57,11 +61,11 @@
         </div>
         <div class="cardSmall">
           <img
-            class="pastImage"
+            class="workImage"
             src="https://source.unsplash.com/1600x900/?city"
-            alt="Past picture"
+            alt="Work picture"
           />
-          <p class="pastText">
+          <p class="workText">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
             temporibus nulla cupiditate autem, excepturi corrupti neque? Sit
             odit eaque minus.
@@ -69,12 +73,12 @@
           <a href="#">Read More</a>
         </div>
       </section>
-      <section class="container section" id="present">
+      <section class="container section" id="experience">
         <div class="card">
           <img
-            class="presentImage"
+            class="experienceImage"
             src="./pictures/present.jpg"
-            alt="Present picture"
+            alt="Experience picture"
           />
           <div class="textContainer">
             <h2>Present</h2>
@@ -87,31 +91,42 @@
           </div>
         </div>
       </section>
-      <section class="container section" id="future">
-        <div class="card">
-          <img
-            class="futureImage"
-            src="./pictures/future.jpg"
-            alt="Future picture"
-          />
-          <div class="textContainer">
-            <h2>Future</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Repudiandae quasi delectus, magnam deserunt nobis quidem tenetur
-              autem saepe inventore ratione alias adipisci impedit quo iste
-              asperiores maiores voluptates dolorem facere possimus! Dignissimos
-              beatae ipsa ab quasi molestias totam quas inventore sunt enim
-              magni mollitia impedit, obcaecati natus? Accusantium natus. Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Quam maxime
-              vero eligendi asperiores aperiam non iure eos praesentium delectus
-              ab expedita perspiciatis, consequuntur quas quasi dolorem velit
-              porro consequatur fugiat, laboriosam commodi eaque corrupti!
-              Ullam, cum? Ipsa quia perspiciatis aspernatur alias molestias
-              excepturi, vitae in ab autem maiores repellat assumenda
-              accusantium aliquid cumque quidem ipsum saepe?
-            </p>
+      <section class="container section" id="skills">
+        <div class="skill">
+          <div class="skillInfo">
+            <p>Coding</p>
+            <i class="fas fa-laptop-code fa-2x"></i>
           </div>
+          <progress max="100" value="60">
+            <div class="progressBar"></div>
+          </progress>
+        </div>
+        <div class="skill">
+          <div class="skillInfo">
+            <p>Investing</p>
+            <i class="fas fa-chart-bar fa-2x"></i>
+          </div>
+          <progress max="100" value="80">
+            <div class="progressBar"></div>
+          </progress>
+        </div>
+        <div class="skill">
+          <div class="skillInfo">
+            <p>3D</p>
+            <i class="fas fa-cubes fa-2x"></i>
+          </div>
+          <progress max="100" value="70">
+            <div class="progressBar"></div>
+          </progress>
+        </div>
+        <div class="skill">
+          <div class="skillInfo">
+            <p>Gym</p>
+            <i class="fas fa-dumbbell fa-2x"></i>
+          </div>
+          <progress max="100" value="90">
+            <div class="progressBar"></div>
+          </progress>
         </div>
       </section>
     </main>
@@ -136,7 +151,6 @@
           </li>
         </ul>
       </form>
-
       <p class="trade">
         Juha Kangas 2020 <span class="tradeMark">&#169;</span>
       </p>
