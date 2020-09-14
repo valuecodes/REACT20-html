@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 98.5vh;
+  display: grid;
+  grid-template-rows: 50px 1fr 50px;
+  gap: 5px;
+  padding: 5px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.siteTitle {
+  background-color: gold;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+nav div {
+  background-color: pink;
+}
+
+main {
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 5px;
+}
+
+.mainSection {
+  display: grid;
+  grid-template-columns: 200px minmax(200px, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 5px;
+}
+
+.postTitle {
+  background-color: lightblue;
+  grid-column: 1/3;
+}
+
+.postMeta {
+  grid-row: 2/7;
+  background-color: lightgreen;
+}
+
+.mainContent {
+  background-color: lightgray;
+  grid-row: 2/4;
+}
+
+.mainImg {
+  background-color: yellow;
+  grid-row: 4/7;
+}
+
+aside {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.sideBar {
+  background-color: orange;
+}
+
+.ads {
+  background-color: green;
+}
+
+.other {
+  background-color: magenta;
+}
+
+footer {
+  background-color: yellow;
+}
