@@ -25,7 +25,8 @@ p {
 }
 
 i {
-  color: rgb(61, 61, 61);
+  margin-left: 1rem;
+  color: white;
 }
 
 a {
@@ -341,7 +342,7 @@ form ul li {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  filter: brightness(50%);
+  filter: brightness(90%);
 }
 
 .imgContainer img:hover {
