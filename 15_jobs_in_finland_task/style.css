@@ -45,6 +45,7 @@
   --text-color: #ffffff;
   --dark-color: "#212529";
   --light-color: #ffffff;
+  --border-color:rgb(212, 212, 212);
   --font: "finlandica";
   --edge-padding: 0 3rem;
 }
@@ -129,6 +130,7 @@ p {
 
 .headerTop a {
   text-decoration: none;
+  margin-top: 1rem;
 }
 
 .logo {
@@ -155,7 +157,7 @@ p {
   display: flex;
 }
 
-.mainNav ul li {
+.navItem {
   padding: 1rem;
   color: var(--text-color);
   border-bottom: 0.2rem solid rgba(255, 255, 255, 0);
@@ -163,8 +165,93 @@ p {
   cursor: pointer;
 }
 
-.mainNav ul li:hover {
+.navItem a{
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.active, .navItem:hover {
   border-bottom: 0.2rem solid rgb(255, 255, 255);
+}
+
+.navItem:active{
+  border-bottom: 0.2rem solid rgb(255, 255, 255);
+}
+
+.dropdownContent{
+  position: absolute;
+  height: 0;
+  display: none;
+  color: var(--text-color);
+  flex-direction: column;
+  z-index: 2;
+}
+
+.dropdownContent ul{
+  width: 14rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-color);
+  color: var(--text-color);
+  margin-top: 1rem;
+  margin-left: -1rem;
+}
+.dropdownContent ul li {
+  height: 2.5rem;
+}
+
+.dropdownContent ul li a{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 1rem;
+  margin-top: auto;
+  color: var(--primary-color);
+}
+
+.dropdownContent ul li a:hover{
+  background-color: rgba(0, 0, 255, 0.137);
+}
+
+
+.dropdown:hover .dropdownContent{
+  display: block;
+}
+
+.searchBox{
+
+}
+
+.searchBox i{
+  color: var(--light-color);
+}
+
+.searchContainer{
+  position: absolute;
+  right: 3rem;
+  margin-top: 1rem;
+  padding:0.8rem;
+  background-color: white;
+  height: 1.8rem;
+  width: 14rem;
+  z-index: 2;
+  border-radius: 0.1rem;
+  display: grid;
+  grid-template-columns: 1fr 2rem;
+  align-items: center;
+}
+
+.searchContainer input{
+  height: 1.8rem;  
+  padding-left: 0.2rem;
+  color: var(--primary-color);
+  border: 0.1rem solid var(--border-color);
+}
+
+.searchButton{
+  height: 100%;
+  border: none;
+  background-color: var(--primary-color);
 }
 
 /* Main */
@@ -213,7 +300,6 @@ p {
 footer {
   padding: var(--edge-padding);
   padding-top: 3rem;
-  height: 20rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   background-color: var(--primary-color);

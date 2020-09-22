@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jobs in Finland</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+    src="https://kit.fontawesome.com/4af73d14ca.js"
+    crossorigin="anonymous"
+  ></script>
   </head>
   <body>
     <div class="container">
@@ -15,14 +19,38 @@
         </div>
         <nav class="mainNav">
           <ul>
-            <li class="navItem">JOBS HOME</li>
-            <li class="navItem">REGIONS</li>
-            <li class="navItem">OPEN POSITIONS</li>
-            <li class="navItem">CAMPAIGNS</li>
-            <li class="navItem">ABOUT</li>
-            <li class="navItem">FOR EMPLOYEES</li>
+            <li class="navItem active">
+              <a href="">JOBS HOME</a></li>
+            <li class="navItem dropdown">
+              <a href="">REGIONS</a>
+              <div class="dropdownContent">
+                <ul>
+                  <li><a href="">Lapland</a></li>
+                  <li><a href="">Capital Region</a></li>
+                  <li><a href="">Southwest Finland</a></li>
+                  <li><a href="">Northern Savonia</a></li>
+                  <li><a href="">Pirkanmaa</a></li>
+                  <li><a href="">Ostrobothnia</a></li>
+                  <li><a href="">Satakunta</a></li>
+                  <li><a href="">Uusimaa</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="navItem">
+              <a href="">OPEN POSITIONS</a></li>
+            <li class="navItem">
+              <a href="">CAMPAIGNS</a></li>
+            <li class="navItem">
+              <a href="">ABOUT</a></li>
+            <li class="navItem">
+              <a href="">FOR EMPLOYEES</a></li>
           </ul>
-          <div class="searchBox">Search</div>
+          <div class="searchBox" onclick="openSearch()"><i class="fas fa-search"></i>
+            <div class="searchContainer">
+              <input type="text" placeholder="Search"> 
+              <button class="searchButton"><i class="fas fa-search"></i></button>
+            </div>
+          </div>
         </nav>
       </header>
       <main>
@@ -146,5 +174,6 @@
         </div>
       </footer>
     </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>
