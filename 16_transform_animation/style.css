@@ -141,3 +141,32 @@ body{
         transform: rotate(0deg);
     }
 }
+
+.menuItem{
+}
+
+.menuItem h1{
+    display:inline-block;
+}
+
+.menuItem h1::before{
+    content: '';
+    width: 4px;
+    height: 100%;
+    display: block;
+    background-color: var(--secondary-color);
+    transition: all 0.5s;
+}
+
+.menuItem h1::after{
+    content: '';
+    height: 4px;
+    width: 0;
+    display: inherit;
+    background-color: var(--secondary-color);
+    transition: all 1s;
+}
+
+.menuItem:hover h1::after{
+    width: 100%;
+}
