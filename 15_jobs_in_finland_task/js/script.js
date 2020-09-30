@@ -7,3 +7,14 @@ function openSearch(){
         searchContainer.style.visibility='hidden'
     }
 }
+
+function openSideMenu(e){
+    let navList = document.getElementById('navList')
+    navList.style.left = '0%'
+}
+
+function closeSideMenu(){
+    console.log('click')
+    let navList = document.getElementById('navList')
+    navList.style.left = '-110%'
+}

@@ -136,6 +136,14 @@ p {
   z-index: 3;
 }
 
+.mobileMenu{
+  visibility: hidden;
+}
+
+.closeSideMenu{
+  display: none;
+}
+
 .reg1{
   background: url("./assets/images/reg2.jpg");
 }
@@ -160,7 +168,6 @@ p {
 .reg8{
   background: url("./assets/images/reg8.jpg");
 }
-
 .cat1{
   background: url("./assets/images/cat1.jpg");
 }
@@ -185,11 +192,9 @@ p {
 .cat8{
   background: url("./assets/images/cat8.jpg");
 }
-
 .cat9{
   background: url("./assets/images/cat3.jpg") center;
 }
-
 
 .gridItem a::before{
   content: "";
@@ -205,7 +210,6 @@ p {
 
 .gridItem a:hover{
   text-decoration: underline;
-  /* background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("https://source.unsplash.com/daily");  */
 }
 
 .gridItem a:hover::before{
@@ -267,6 +271,7 @@ header{
   font-size: 1.8rem;
   margin: 1rem 0;
   letter-spacing: -1px;
+  cursor: pointer;
 }
 
 .logoSpan {
@@ -275,8 +280,8 @@ header{
 }
 
 .mainNav {
-position: relative;
-z-index: 1000;
+  position: relative;
+  z-index: 1000;
   padding: var(--edge-padding);
   background-color: var(--primary-color);
   display: flex;
@@ -360,7 +365,7 @@ z-index: 1000;
   visibility: hidden;
   position: absolute;
   right: 3rem;
-  margin-top: 1rem;
+  margin-top: 7rem;
   padding:0.8rem;
   background-color: var(--light-color);
   height: 1.8rem;
@@ -397,6 +402,10 @@ z-index: 1000;
   background-color: var(--primary-color);
 }
 
+.searchButton i{
+    color: white;
+}
+
 /* Main */
 
 /* HeroBanner */
@@ -405,6 +414,7 @@ z-index: 1000;
   width: 100%;
   height: 70vh;
   background-image: url("https://source.unsplash.com/1600x900/?people");
+  background-size: cover;
   display: flex;
   z-index: 0;
 }
@@ -441,14 +451,16 @@ z-index: 1000;
 }
 
 /* Footer */
-footer {
-  padding: var(--edge-padding);
-  margin-top: 3rem;
+.footer {
   padding-top: 3rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   background-color: var(--primary-color);
   color: var(--light-color);
+}
+
+.footer div{
+  padding:var(--edge-padding)
 }
 
 .footerJobs span {
@@ -497,7 +509,7 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-  
+
   .section{
     padding: 1rem;
   }
@@ -510,11 +522,12 @@ footer {
   .gridItem a{
     font-size: 1.4rem;
   }
-  
+
   header{
     display: flex;
     height: 6rem;
   }
+
   .mainNav{
     position: initial;
     right: 0;
@@ -522,25 +535,81 @@ footer {
     height: 6rem;
     padding:0;
     background-color: white;
-    
   }
-  .mainNav ul{
+
+  #navList{
     position: absolute;
-    left: 0px;
+    z-index: 10;
+    top: 0;
+    margin-left: -6rem;
+    width: 100vw;
+    left: 0;
     background-color: var(--light-color);
-    width: 6rem;
-    height: 5.905rem;
-    border: 1px solid rgba(0, 0, 0, 0.178);
-    overflow: hidden;
+    flex-direction: column;
+    transition: all 1s;
   }
+
+  .closeSideMenu{
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: -6rem;
+    width: 6rem;
+    height: 6rem;
+    border: none;
+    background-color: var(--primary-color);
+    cursor: pointer;
+  }
+
+  .fa-times{
+    color: white;
+  }
+
+  #navList li{
+    background-color: rgb(255, 255, 255);
+    padding-left: 7rem;
+  }
+
+  #navList li a{
+    color: black;
+  }
+
+  .dropdown{
+    position: relative;
+    height: 21rem;
+  }
+
+  .dropdownContent{
+    display: block;
+  }
+
+  .dropdownContent ul li{
+    margin-left: -5rem;
+  }
+
+  .dropdownContent ul li a{
+    color: black;
+    margin:0;
+  }
+
+  .mobileMenu{
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    visibility: visible;
+    cursor: pointer;
+  }
+
   .headerTop{
     margin-left: 4rem;
   }
+
   .searchBox{
     padding: 0;
     margin:0;
     position: absolute;
     right: 0;
+    top: 0;
     height: 6rem;
     width: 6rem;
     display: flex;
@@ -553,25 +622,23 @@ footer {
     color: var(--primary-color);
   }
 
-  .searchButton i{
-    color: white;
-  }
-
   #searchContainer{
     margin-top: 9.5rem;
   }
+
   .workInFinland{
     display: none;
   }
   .heroBanner{
     height: auto;
   }
+
   .heroBannerText{
     padding:0;
     margin: 10rem 0;
   }
 
-  footer div{
+  .footer div{
     height: 12rem;
     grid-column: 1/5;
   }
