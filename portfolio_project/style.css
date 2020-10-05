@@ -5,6 +5,16 @@
   padding: 0;
 }
 
+:root{
+  --primary-color:rgb(49,64,79);  
+  --primary-variant:rgb(43,76,111);
+  --secondary-color: rgb(0,173,149);
+
+  --light-color:rgb(240,240,240);
+  --background-color:rgb(97,102,106);
+  --text-light:rgb(32,32,32);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -79,12 +89,14 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: rgba(49, 49, 49, 0.849);
+  z-index: 10;
 }
 
 .logo {
-  margin: 0 1rem;
-  font-size: 1.6rem;
-  color: rgb(255, 255, 255);
+  height: 5rem;
+  margin:0;
+  margin-left: 2rem;
+  display: flex;
 }
 
 /* NavBar */
@@ -131,6 +143,9 @@ header {
 
 .dropdownContent a {
   background-color: rgb(75, 75, 75);
+  /* width: 100%; */
+  position: relative;
+  right: 0.25rem;
 }
 
 .dropdown:hover .dropdownContent {
@@ -327,7 +342,7 @@ form ul li {
 .galleryGrid {
   height: 100%;
   background-color: gray;
-  margin-top: 10rem;
+  margin-top: 7rem;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
