@@ -18,17 +18,28 @@
       <a
         class="logo"
         href="http://127.0.0.1:5500/html/portfolio_project/index.html"
-        >My Portfolio
+        ><img src="./pictures/logo.svg"/>
       </a>
       <nav>
-        <ul class="navbar">
-          <li class="dropdown">
-            <a href="index.html" class="dropdownButton"
+        <div onclick="openMenu()" class="mobileMenu">
+          <i class="fas fa-bars fa-2x"></i>
+        </div>
+        <ul id='navigation' class="navbar">
+          <li class="dropdown" >
+            <a href="#" class="dropdownButton"
               >Portfolio<i class="fas fa-angle-down"></i
             ></a>
+            <div class="dropdownContent">
+              <ul>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+              </ul>
+            </div>
           </li>
           <li>
-            <a href="#contact"><i class="fas fa-paper-plane"></i>Contact</a>
+            <a href="#contact">Contact<i class="fas fa-paper-plane"></i></a>
           </li>
         </ul>
       </nav>
@@ -99,4 +110,5 @@
       <p class="trade">Juha Kangas 2020 &#169;</p>
     </footer>
   </body>
+  <script src="./script.js"></script>
 </html>

@@ -21,16 +21,21 @@
         ><img src="./pictures/logo.svg"/>
       </a>
       <nav>
-        <ul class="navbar">
-          <li class="dropdown">
+        <div onclick="openMenu()" class="mobileMenu">
+          <i class="fas fa-bars fa-2x"></i>
+        </div>
+        <ul id='navigation' class="navbar">
+          <li class="dropdown" >
             <a href="#" class="dropdownButton"
               >Portfolio<i class="fas fa-angle-down"></i
             ></a>
             <div class="dropdownContent">
-              <a href="#work">Work</a>
-              <a href="#experience">Experience</a>
-              <a href="#skills">Skills</a>
-              <a href="gallery.html">Gallery</a>
+              <ul>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+              </ul>
             </div>
           </li>
           <li>
@@ -106,7 +111,7 @@
         <div class="skill">
           <div class="skillInfo">
             <p>Coding</p>
-            <i class="fas fa-laptop-code fa-2x"></i>
+            <img src="./pictures/codeIcon.svg" alt="Code icon"/>
           </div>
           <progress max="100" value="60">
             <div class="progressBar"></div>
@@ -115,7 +120,7 @@
         <div class="skill">
           <div class="skillInfo">
             <p>Investing</p>
-            <i class="fas fa-chart-bar fa-2x"></i>
+            <img src="./pictures/investingIcon.svg" alt="Investing icon">
           </div>
           <progress max="100" value="80">
             <div class="progressBar"></div>
@@ -124,7 +129,7 @@
         <div class="skill">
           <div class="skillInfo">
             <p>3D</p>
-            <i class="fas fa-cubes fa-2x"></i>
+            <img src="./pictures/3dIcon.svg" alt="3D icon">
           </div>
           <progress max="100" value="70">
             <div class="progressBar"></div>
@@ -133,7 +138,7 @@
         <div class="skill">
           <div class="skillInfo">
             <p>Gym</p>
-            <i class="fas fa-dumbbell fa-2x"></i>
+            <img src="./pictures/gymIcon.svg" alt="Gym icon">
           </div>
           <progress max="100" value="90">
             <div class="progressBar"></div>
@@ -158,11 +163,15 @@
             <textarea name="" id="text" cols="30" rows="5"></textarea>
           </li>
           <li>
-            <button class="button" type="submit">Send</button>
+            <button class="button submitForm" type="submit">
+              <i class="fas fa-paper-plane"></i>
+              Send
+            </button>
           </li>
         </ul>
       </form>
       <p class="trade">Juha Kangas 2020 &#169;</p>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>

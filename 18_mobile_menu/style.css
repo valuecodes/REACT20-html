@@ -142,7 +142,6 @@ section{
         position: static;
         display: block;
         margin-left: 10px;
-        
     }
     .dropdownContent ul li{
         background-color: rgb(80, 136, 136);
