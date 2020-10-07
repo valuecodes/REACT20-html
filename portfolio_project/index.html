@@ -12,6 +12,7 @@
       src="https://kit.fontawesome.com/4af73d14ca.js"
       crossorigin="anonymous"
     ></script>
+    
   </head>
   <body>
     <header>
@@ -89,13 +90,32 @@
           <a href="#">Read More</a>
         </div>
       </section>
-      <section class="container section" id="experience">
-        <div class="card">
-          <img
-            class="experienceImage"
-            src="./pictures/present.jpg"
-            alt="Experience picture"
-          />
+      <section class="container section" >
+        <div class="cardBig">
+          <div class="carouselContainer">
+            <div id="carousel">
+              <img
+                class="carouselImage"
+                src="./pictures/carousel1.jpg"
+                alt="Space picture"
+              />            
+              <img
+                class="carouselImage"
+                src="./pictures/carousel2.jpg"
+                alt="Nature picture"
+              />            
+              <img
+                class="carouselImage"
+                src="./pictures/carousel3.jpg"
+                alt="Mountain picture"
+              />            
+              <img
+                class="carouselImage"
+                src="./pictures/carousel4.jpg"
+                alt="City picture"
+              />            
+            </div>            
+          </div>
           <div class="textContainer">
             <h2>Present</h2>
             <p>
@@ -171,7 +191,8 @@
         </ul>
       </form>
       <p class="trade">Juha Kangas 2020 &#169;</p>
-    </footer>
+      <button class="backToTop"><i class="fas fa-paper-plane"></i></button>
+    </footer> 
     <script src="./script.js"></script>
   </body>
 </html>

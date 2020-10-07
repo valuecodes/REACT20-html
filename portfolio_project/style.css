@@ -258,9 +258,7 @@ a {
 }
 
 /* Experience */
-#experience .card {
-  display: flex;
-}
+
 
 .textContainer {
   padding: 2rem;
@@ -268,19 +266,33 @@ a {
 
 .textContainer h2 {
   margin-bottom: 1rem;
-  color: rgb(59, 59, 59);
 }
 
-.card {
-  margin: 0;
-  margin: auto;
-  background-color: var(--light-color);
-  border-radius: 5px;
-}
-
-.experienceImage {
+.cardBig{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   height: 350px;
-  width: 50%;
+  background-color: var(--light-color);
+  border-radius: 0.5rem;
+}
+
+.carouselContainer{
+  width: 1440px;
+  max-height: 350px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+#carousel{
+  position: relative;
+  right: 0px;
+  width: 100%;
+  display: flex;
+}
+
+.carouselImage{
+  width: 1200px;
   object-fit: cover;
 }
 
@@ -383,6 +395,17 @@ form ul li {
   display: block;
   font-size: 0.8rem;
   margin: 0.5rem;
+}
+
+.backToTop{
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  height: 3rem;
+  width: 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--primary-variant);
 }
 
 /* Gallery */
@@ -498,19 +521,34 @@ form ul li {
     border-bottom: 0.2rem solid var(--primary-variant);
   }
 
-
-  #experience .card {
-    flex-direction: column;
+  .dropdown{
+    border-bottom: 0.2rem solid rgba(255, 255, 255, 0);
   }
-  .experienceImage {
-    height: 30rem;
-    width: 100%;
+
+  .cardBig{
+    height: 750px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 350px 350px;
+  }
+
+  .carouselContainer{
+    border-radius: 0rem;
+  }
+  
+  #carousel{
+    height: 350px;
+  }
+  
+  .carouselImage{
+    width: 1200px;
     object-fit: cover;
-  }  
+  }
+
   .logo {
     margin: 0;
-    /* padding-top: 1rem; */
   }
+
   header {
     flex-direction: column;
   }
@@ -527,3 +565,6 @@ form ul li {
     flex-direction: column;
   }
 }
+
+
+
