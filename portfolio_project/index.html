@@ -16,34 +16,37 @@
   </head>
   <body>
     <header>
-      <a
-        class="logo"
-        href="http://127.0.0.1:5500/html/portfolio_project/index.html"
-        ><img src="./pictures/logo.svg"/>
-      </a>
-      <nav>
-        <div onclick="openMenu()" class="mobileMenu">
-          <i class="fas fa-bars fa-2x"></i>
-        </div>
-        <ul id='navigation' class="navbar">
-          <li class="dropdown" >
-            <a href="#" class="dropdownButton"
-              >Portfolio<i class="fas fa-angle-down"></i
-            ></a>
-            <div class="dropdownContent">
-              <ul>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a href="#contact">Contact<i class="fas fa-paper-plane"></i></a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container">
+        <a
+          class="logo"
+          href="http://127.0.0.1:5500/html/portfolio_project/index.html"
+          ><img src="./pictures/logo.svg"/>
+        </a>
+        <nav>
+          <div onclick="openMenu()" class="mobileMenu">
+            <i class="fas fa-bars fa-2x"></i>
+          </div>
+          <ul id='navigation' class="navbar">
+            <li class="dropdown" >
+              <a href="#" class="dropdownButton"
+                >Portfolio<i class="fas fa-angle-down"></i
+              ></a>
+              <div class="dropdownContent">
+                <ul>
+                  <li><a href="#work">Work</a></li>
+                  <li><a href="#experience">Experience</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="animation.html">Animation</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#contact">Contact<i class="fas fa-paper-plane"></i></a>
+            </li>
+          </ul>
+        </nav>        
+      </div>
     </header>
     <main>
       <div class="heroBanner">
@@ -191,7 +194,7 @@
         </ul>
       </form>
       <p class="trade">Juha Kangas 2020 &#169;</p>
-      <button class="backToTop"><i class="fas fa-paper-plane"></i></button>
+      <a href="#" class="backToTop"><i class="fas fa-arrow-up fa-2x"></i></a>
     </footer> 
     <script src="./script.js"></script>
   </body>

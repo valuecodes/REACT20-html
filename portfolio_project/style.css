@@ -8,7 +8,7 @@
 :root{
   --primary-color:rgb(56, 63, 70);
   --primary-variant:rgb(43,76,111);
-  --secondary-color: rgb(0,173,149);
+  --secondary-color: rgb(0, 173, 149);
 
   --light-color:rgb(240,240,240);
   --dark-color:rgb(207,207,207);
@@ -105,11 +105,15 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
+  background-color: var(--primary-color);
+  z-index: 10;
+}
+
+header .container{
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--primary-color);
-  z-index: 10;
 }
 
 .logo {
@@ -399,24 +403,35 @@ form ul li {
 
 .backToTop{
   position: fixed;
-  right: 2rem;
-  bottom: 2rem;
+  right: 1rem;
+  bottom: 1rem;
   height: 3rem;
   width: 3rem;
   border: none;
   border-radius: 0.5rem;
-  background-color: var(--primary-variant);
+  background-color: var(--primary-color);
+  opacity: 0.5;
+  cursor: pointer;
+  display: flex;
+}
+.backToTop:hover{
+  opacity: 1;
+}
+
+.backToTop i{
+  margin: auto;
+  color: var(--secondary-color);
 }
 
 /* Gallery */
 .gallery {
-  height: 100vh;
+  height: 85vh;
 }
 
 .galleryGrid {
+  margin-top: 80px;
   height: 100%;
   background-color: gray;
-  margin-top: 7rem;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
@@ -463,6 +478,77 @@ form ul li {
 }
 .img8 {
   grid-area: 4 / 7 / 5 / 9;
+}
+
+.animation{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.center{
+  height:0;
+  width: 0;
+  animation-name: animation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.animationImage{
+  height: 8rem;
+  margin-top: -4rem;
+  margin-left: -4rem;
+}
+
+.animationGrid{
+  height: 20rem;
+  margin-left: -9rem;
+  margin-top: -13.3rem;
+  width: 20rem;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  animation-name: grid;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.animationGridItem{
+  position: relative;
+  z-index: -1;
+  height: 2rem;
+  width: 2rem;
+  background-color:rgba(255, 255, 255, 0.089);
+}
+
+@keyframes grid{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    margin-left: -40;
+    margin-top: -40;
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+@keyframes animation{
+  0%{
+    transform: rotate(0deg);
+    box-shadow: 0px 10px 180px 180px rgba(0,173,149,1);
+  }
+  50%{
+    transform: rotate(180deg);
+    box-shadow: 0px 10px 168px 157px rgba(0, 173, 150, 0);
+  }
+  100%{
+    transform: rotate(360deg);
+    box-shadow: 0px 10px 180px 180px rgba(0,173,149,1);
+  }
 }
 
 @media only screen and (max-width: 899px) {
@@ -545,14 +631,20 @@ form ul li {
     object-fit: cover;
   }
 
+  header .container{
+    flex-direction: column;
+  }
+  
   .logo {
     margin: 0;
   }
 
-  header {
-    flex-direction: column;
+  .backToTop{
+    position: fixed;
+    right: 0rem;
+    bottom: -1.5rem;
+    transform: scale(0.5);
   }
-
 }
 
 @media only screen and (max-width: 500px) {

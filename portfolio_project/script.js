@@ -23,16 +23,8 @@
 
         carousel.style.right=right+'px'
     }, 20);
-
-
-
-
     
 })();
-
-
-
-
 
 function openMenu(){
     let navigation = document.getElementById('navigation')
