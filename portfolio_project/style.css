@@ -232,7 +232,7 @@ header .container{
 
 .cardSmall {
   padding: 3px;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   width: 20rem;
   background-color: var(--light-color);
   margin: 1rem;
@@ -250,8 +250,8 @@ header .container{
 }
 
 .cardSmall p,
-a {
-  margin: 2rem 0.5rem;
+a, h3 {
+  margin: 1rem 0.5rem;
 }
 
 .workImage {
@@ -501,12 +501,14 @@ form ul li {
   margin-top: -4rem;
   margin-left: -4rem;
 }
-
+.animationImageSmall{
+  
+}
 .animationGrid{
-  height: 20rem;
-  margin-left: -9rem;
-  margin-top: -13.3rem;
-  width: 20rem;
+  height: 50rem;
+  width: 50rem;
+  margin-top: -33rem;
+  margin-left: -27rem;
   display: grid;
   grid-template-columns: repeat(5,1fr);
   animation-name: grid;
@@ -515,21 +517,32 @@ form ul li {
 }
 
 .animationGridItem{
+  border-radius: 50%;
   position: relative;
   z-index: -1;
+  margin-left: 1rem;
   height: 2rem;
   width: 2rem;
-  background-color:rgba(255, 255, 255, 0.089);
+  background-color:rgba(255, 255, 255, 0);
 }
+
 
 @keyframes grid{
   0%{
     opacity: 0;
   }
+  40%{
+    opacity: 0;
+    transform: rotate(180deg);
+  }
   50%{
-    margin-left: -40;
-    margin-top: -40;
     opacity: 1;
+    transform: rotate(180deg);
+    background-color: var(--background-color);
+  }
+  65%{
+    opacity: 0;
+    transform: rotate(180deg);
   }
   100%{
     opacity: 0;
@@ -544,6 +557,7 @@ form ul li {
   50%{
     transform: rotate(180deg);
     box-shadow: 0px 10px 168px 157px rgba(0, 173, 150, 0);
+    opacity: 0.5;
   }
   100%{
     transform: rotate(360deg);

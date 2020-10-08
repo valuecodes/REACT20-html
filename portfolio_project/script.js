@@ -4,7 +4,7 @@
     let carousel = document.getElementById('carousel')
     let numberOfPictures = 4
     let imageWidth = 1200
-    let speed = 1;
+    let speed = 0.3;
     let direction = 1
     
     setInterval(()=>{
@@ -22,7 +22,7 @@
         }
 
         carousel.style.right=right+'px'
-    }, 20);
+    }, 10);
     
 })();
 
